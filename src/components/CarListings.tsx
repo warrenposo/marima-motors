@@ -166,7 +166,7 @@ const CarListings = () => {
                   </div>
                 )}
 
-                <div className="flex gap-2">
+                <div className="flex flex-col sm:flex-row gap-2 mt-4">
                   <Button 
                     className="flex-1 bg-blue-600 hover:bg-blue-700" 
                     disabled={!car.in_stock}
@@ -176,14 +176,6 @@ const CarListings = () => {
                     }}
                   >
                     {car.in_stock ? "View Details" : "Notify When Available"}
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="flex-1 border-gold-500 text-gold-600 hover:bg-gold-50"
-                    disabled={!car.in_stock}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    Test Drive
                   </Button>
                 </div>
               </CardContent>

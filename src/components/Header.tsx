@@ -26,7 +26,7 @@ const Header = () => {
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 mb-2 md:mb-0">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4 text-gold-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+254713093898</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="w-4 h-4 text-gold-400" />
@@ -35,7 +35,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <MapPin className="w-4 h-4 text-gold-400" />
-              <span className="text-center sm:text-left">123 Motor Street, Car City, CC 12345</span>
+              <span className="text-center sm:text-left">Moi avenue, Mombasa City</span>
             </div>
           </div>
         </div>

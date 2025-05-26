@@ -185,12 +185,22 @@ export const CarDetailModal = ({ car, open, onOpenChange }: CarDetailModalProps)
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
-              <Button 
-                className="flex-1 bg-blue-600 hover:bg-blue-700 text-sm sm:text-base" 
-                disabled={!car.in_stock}
-              >
-                {car.in_stock ? "Contact Dealer" : "Notify When Available"}
-              </Button>
+              <div className="flex flex-1 gap-2">
+                <Button 
+                  className="flex-1 bg-green-600 hover:bg-green-700 text-sm sm:text-base" 
+                  onClick={() => window.open(`https://wa.me/254713093898`, '_blank')}
+                  disabled={!car.in_stock}
+                >
+                  <span>WhatsApp</span>
+                </Button>
+                <Button 
+                  className="flex-1 bg-blue-600 hover:bg-blue-700 text-sm sm:text-base" 
+                  onClick={() => window.location.href = `tel:+254713093898`}
+                  disabled={!car.in_stock}
+                >
+                  <span>Call</span>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

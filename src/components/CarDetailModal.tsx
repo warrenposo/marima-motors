@@ -191,13 +191,6 @@ export const CarDetailModal = ({ car, open, onOpenChange }: CarDetailModalProps)
               >
                 {car.in_stock ? "Contact Dealer" : "Notify When Available"}
               </Button>
-              <Button 
-                variant="outline" 
-                className="flex-1 border-gold-500 text-gold-600 hover:bg-gold-50 text-sm sm:text-base"
-                disabled={!car.in_stock}
-              >
-                Schedule Test Drive
-              </Button>
             </div>
           </div>
         </div>
